@@ -13,7 +13,7 @@ jobs:
     
     - name: login
       shell: bash
-      run: argocd login 
+      run: argocd login --help
       
   
   
