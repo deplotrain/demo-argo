@@ -1,0 +1,16 @@
+name: DODo
+
+on:
+ workflow_dispatch:
+ 
+jobs:
+  ArgoCLI:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: clowdhaus/argo-cd-action/@main
+      with:
+            version: 2.5.5
+            command: version
+            options: --client
+  
+  
