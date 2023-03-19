@@ -13,7 +13,7 @@ jobs:
     
     - name: login
       shell: bash
-      run: argocd login --help
+      run: echo ${{ secrets.ARGOCD_SERVER }}
       
   
   
